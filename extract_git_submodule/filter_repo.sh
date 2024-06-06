@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Variables
-ORIGINAL_REPO_PATH="/path/to/original-repo"
-SUBMODULE_PATH="path/to/submodule"
-NEW_REPO_PATH="/path/to/new-repo"
+ORIGINAL_REPO_PATH="git@github.com:jiangnanqw12/test-code.git"
+SUBMODULE_PATH="automate_online-materials"
+NEW_REPO_PATH="git@github.com:jiangnanqw12/automate_online-materials.git"
 
 # Clone the original repository
 git clone "$ORIGINAL_REPO_PATH" original-repo
