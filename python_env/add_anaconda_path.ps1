@@ -1,13 +1,16 @@
 # Set the primary and secondary Anaconda paths
 $primaryCondaPath = "C:\Users\shade\anaconda3"
 $secondaryCondaPath = "C:\ProgramData\anaconda3"
+$thirdaryCondaPath = "C:\tools\Anaconda3"
 
 # Check if the primary Anaconda path exists
 if (Test-Path $primaryCondaPath) {
     $condaPath = $primaryCondaPath
 } elseif (Test-Path $secondaryCondaPath) {
     $condaPath = $secondaryCondaPath
-} else {
+} elseif (Test-Path $thirdaryCondaPath) {
+    $condaPath = $thirdaryCondaPath
+}else {
     Write-Error "Neither Anaconda path exists: $primaryCondaPath or $secondaryCondaPath"
     exit
 }
