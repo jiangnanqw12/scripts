@@ -3,8 +3,8 @@ import subprocess
 
 # Variables
 ORIGINAL_REPO_PATH = "git@github.com:jiangnanqw12/test-code.git"
-SUBMODULE_PATH = "plot"
-NEW_REPO_PATH = "git@github.com:jiangnanqw12/xrl_diagram.git"
+SUBMODULE_PATH = r"005_video_process/yt-dlp"
+NEW_REPO_PATH = "git@github.com:jiangnanqw12/video_download_scripts.git"
 DEBUG_MODE=1
 
 def run_command(command):
